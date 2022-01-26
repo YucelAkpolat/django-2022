@@ -1,5 +1,5 @@
 from unicodedata import category
-from zoneinfo import available_timezones
+
 from django.shortcuts import render
 from django.template import context
 from . models import Category, Urunler,Tag
