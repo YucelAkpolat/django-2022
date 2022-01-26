@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-54tc@!%_z9y!*1(m5g&lqvn_iv)&18_kl9)u#q8ms0lbfy+-d^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['34.142.15.24']
 
 
 # Application definition
@@ -76,10 +76,21 @@ WSGI_APPLICATION = 'muratdeniz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'MYDB',
+        'USER': 'darkk_bluee',
+        'PASSWORD': '6522683owen',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -119,7 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('static')),] # yeni satır
+MEDIA_ROOT = os.path.join(BASE_DIR,'static') # yeni sa
+#STATICFILES_DIRS = [str(BASE_DIR.joinpath('static')),] # yeni satır
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media') # yeni sa
 
