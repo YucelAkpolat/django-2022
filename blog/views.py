@@ -30,7 +30,7 @@ def blog(request):
       return render(request,'blog.html',context)
 
 
-def search(request):
+def searchh(request):
     posts = Post.objects.filter(Q(isim__contains=request.GET['search']) | Q(aciklama__contains=request.GET['search']))
     
     
