@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['muratdenizsazevi.com','34.125.95.134','127.0.0.1']
 
-
+SITE_ID = 2
 # Application definition
 
 INSTALLED_APPS = [
@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'muratdeniz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}"""
+}
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbmy',
@@ -94,7 +94,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
-}
+}"""
 
 
 # Password validation
@@ -119,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
 TIME_ZONE = 'UTC'
 

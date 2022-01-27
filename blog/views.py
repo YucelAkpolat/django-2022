@@ -1,3 +1,4 @@
+from unicodedata import name
 from django.shortcuts import render
 from django.core.paginator import Paginator
 from . models import Category, Post,Tag
@@ -9,7 +10,7 @@ def blog(request):
 
       articles = Post.objects.all().filter(available=True).order_by('-id')
       paginator = Paginator(articles, 4)
-      
+     
       categories = Category.objects.all().order_by('-id')
       
       tags = Tag.objects.all()
@@ -31,7 +32,7 @@ def blog(request):
 
 
 def searchh(request):
-    posts = Post.objects.filter(Q(isim__contains=request.GET['search']) | Q(aciklama__contains=request.GET['search']))
+    posts = Post.objects.filter( Q(isim__contains=request.GET['search']) | Q(aciklama__contains=request.GET['search']))
     
     
     categories = Category.objects.all()
