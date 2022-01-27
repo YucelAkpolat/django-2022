@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'muratdeniz.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mydb',
+        'NAME': 'dbmy',
         'USER': 'darkk_bluee',
         'PASSWORD': '6522683owen',
         'HOST': 'localhost',
