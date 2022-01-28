@@ -148,7 +148,7 @@ else:
 
   
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
+MEDIA_ROOT = '/home/yucelakpolat/django-2022/media'
 
 
 
