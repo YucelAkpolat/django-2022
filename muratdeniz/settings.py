@@ -140,11 +140,11 @@ MEDIA_URL = '/upload/'
 
 if DEBUG:
 
-  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
 
 else:
 
-  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+  STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
   
 
@@ -154,3 +154,5 @@ MEDIA_ROOT = '/home/yucelakpolat/django-2022/media'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
