@@ -140,7 +140,7 @@ MEDIA_URL = '/upload/'
 
 if DEBUG:
 
-  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 else:
 
