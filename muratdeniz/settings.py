@@ -134,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/upload/'
+MEDIA_URL = '/media/'
 
   
 
