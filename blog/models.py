@@ -20,7 +20,7 @@ class Post(models.Model):
  category = models.ForeignKey(Category,null=True,on_delete=models.DO_NOTHING)
  tags = models.ManyToManyField(Tag,blank=True,null=True)
  aciklama = models.TextField(blank=True,null=True)
- resim = models.ImageField()
+ 
  vıdeo =  models.CharField(max_length=2000)
  tarih = models.DateField(auto_now=True)
  available =models.BooleanField(default=True)
