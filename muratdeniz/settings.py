@@ -155,4 +155,4 @@ MEDIA_ROOT = '/home/yucelakpolat/django-2022/media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
